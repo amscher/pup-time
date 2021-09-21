@@ -117,6 +117,7 @@ class _ScheduleTaskPageWidgetState extends State<ScheduleTaskPageWidget> {
                             builder: (context) =>
                                 ScheduledTaskSuccessPageWidget(
                               level: widget.level,
+                              dueDate: datePicked
                             ),
                           ),
                           (r) => false,
