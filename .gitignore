@@ -44,3 +44,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+/ios/Runner/GeneratedPluginRegistrant.m
+ios/Runner/GeneratedPluginRegistrant.m
+
+# OTHER
+lib/backend/schema/practice_iterations_record.g.dart
+lib/backend/schema/serializers.g.dart
+lib/backend/schema/tasks_record.g.dart
+lib/backend/schema/users_record.g.dart
+pubspec.lock
