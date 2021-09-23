@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'auth/firebase_user_provider.dart';
@@ -8,6 +9,7 @@ import 'flutter_flow/flutter_flow_theme.dart';
 import 'home_page/home_page_widget.dart';
 import 'saved_items/saved_items_widget.dart';
 import 'task_list_page/task_list_page_widget.dart';
+import 'task_list_page_copy/task_list_page_copy_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -81,6 +83,7 @@ class _NavBarPageState extends State<NavBarPage> {
       'HomePage': HomePageWidget(),
       'SavedItems': SavedItemsWidget(),
       'TaskListPage': TaskListPageWidget(),
+      'TaskListPageCopy': TaskListPageCopyWidget(),
     };
     return Scaffold(
       body: tabs[_currentPage],
@@ -104,6 +107,17 @@ class _NavBarPageState extends State<NavBarPage> {
             ),
             activeIcon: Icon(
               Icons.star_outlined,
+              size: 26,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.check_circle_outline,
+              size: 26,
+            ),
+            activeIcon: Icon(
+              Icons.check_circle_sharp,
               size: 26,
             ),
             label: 'Home',
