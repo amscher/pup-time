@@ -48,6 +48,8 @@ app.*.map.json
 android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
 /ios/Runner/GeneratedPluginRegistrant.m
 ios/Runner/GeneratedPluginRegistrant.m
+ios/Runner/GeneratedPluginRegistrant.h
+/ios/Runner/GeneratedPluginRegistrant.h
 
 # OTHER
 lib/backend/schema/practice_iterations_record.g.dart
